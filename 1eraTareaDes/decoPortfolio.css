@@ -1,0 +1,205 @@
+body {
+    background: rgba(132, 124, 245, 0.749); 
+    font-family: 'Poppins', Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px; 
+    box-sizing: border-box; 
+    
+    position: relative;
+}
+
+
+
+body::before {
+    width: 600px;
+    height: 600px;
+    top: -150px;
+    left: -200px;
+}
+
+body::after {
+    width: 300px;
+    height: 300px;
+    bottom: -100px;
+    right: -100px;
+}
+
+.container_principal {
+    background: #e1ddf1;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 45px 10px 30px rgba(11, 11, 11, 0.15);
+    width: 770px;
+    max-width: 100%;
+    overflow: hidden;
+    border: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+
+.seccion-imagen {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; 
+}
+
+.seccion-texto {
+    flex: 1.5; 
+    width: 900px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #333; 
+}
+
+
+.seccion-texto .role {
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+    color: #5c54a3; 
+    margin: 0
+}
+
+.seccion-texto .name {
+    font-size: 3em;
+    font-weight: 700;
+    color: #3b347a; 
+    margin: 5px 0 15px 0;
+    line-height: 1.1;
+}
+
+.seccion-texto .description {
+    font-size: 1.1em;
+    color: #555;
+    font-style: italic; 
+}
+
+
+.container_video {
+    position: absolute;
+    bottom: 20px; 
+    right: 20px;  
+    
+    
+    background: #e1ddf1;
+    border-radius: 20px;
+    box-shadow: 45px 10px 30px rgba(11, 11, 11, 0.15);
+    padding: 7px;
+    
+    
+    width: 640px;
+    max-width: 90%; 
+    box-sizing: border-box;
+}
+
+
+.video-responsive-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px; 
+}
+
+.video-responsive-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.redes {
+    background: #e1ddf1;
+    border-radius: 20px;
+    box-shadow: 45px 10px 30px rgba(11, 11, 11, 0.15);
+    
+    
+    width: 770px; 
+    max-width: 100%;
+    box-sizing: border-box; 
+    
+
+    margin-top: 20px; 
+    padding: 20px;    
+
+    color: #333;
+}
+
+.redes h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: #5c54a3;
+    margin: 0 0 15px 0; 
+    padding-bottom: 10px;
+}
+
+.redes ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.redes li {
+    margin-bottom: 10px; 
+}
+
+.redes a {
+    text-decoration: none;
+    color: #3b347a;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out; 
+}
+
+.redes a:hover {
+    color: #5c54a3;      
+    padding-left: 5px; 
+}
+
+
+@media (max-width: 768px) {
+    
+    
+    .container_principal {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto; 
+    }
+
+    .seccion-texto {
+        padding: 30px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .seccion-texto .name {
+        font-size: 2.5em;
+    }
+
+    .container_video {
+        position: relative; 
+        bottom: auto;       
+        right: auto;        
+        
+        width: 90%; 
+        margin: 20px auto 0 auto; 
+    }
+}
